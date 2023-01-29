@@ -121,6 +121,10 @@ built as follows.
 
 In order to build with `cabal` you have to install `ghc-8.10.7` (Haskell compiler)
 and `cabal >= 3.4` (Haskell build-tool)
+```
+ghcup install ghc 8.10.7
+ghcup set ghc 8.10.7
+```
 
 *   [Linux / Mac](https://www.haskell.org/ghcup/)
 
@@ -130,7 +134,7 @@ You need to install the development versions of the following libraries:
 On apt based distribution these can be installed as follows:
 
 ```
-apt-get install ca-certificates libssl-dev libgmp-dev libsnappy-dev zlib1g-dev liblz4-dev libbz2-dev libgflags-dev libzstd-dev
+apt-get install ca-certificates build-essential libssl-dev libgmp-dev libsnappy-dev zlib1g-dev liblz4-dev libbz2-dev libgflags-dev libzstd-dev libtbb-dev
 ```
 
 To build a `chainweb-node` binary:
